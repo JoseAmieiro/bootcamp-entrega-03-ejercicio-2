@@ -22,7 +22,7 @@ function getVat (product) {
          break;
      default: iva = 0.21;
     }
-    return iva;
+    return iva * product.price;
 }
 
 function getTotalVat(product) {
